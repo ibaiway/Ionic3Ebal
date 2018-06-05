@@ -1,0 +1,16 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>info</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <img src="{{lenguaje.imagen}}" onerror=" "> <!-- Cogemos la url de la imagen del objeto, y se muestra la imagen  -->
+  <b>{{lenguaje.name}}:</b><br> {{lenguaje.metodo}}<br> <!-- Cogemos el nombre y el metodo del objeto y se muestra  -->
+  <p>{{lenguaje.descripcion}}</p> <!-- Cogemos la descripcion del objeto y se muestra -->
+  <a href="{{urlg}}"><button ion-button>Ver mas</button></a> <!-- Asignamos la url a google del objeto al boton  -->
+  <a href="{{urly}}"><button ion-button color="secondary">Ver tutorial</button></a> <!-- Asignamos la url a youtube del objeto al boton  -->
+
+</ion-content>

@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Insert
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+   <form>
+        <ion-list>
+          <ion-input [(ngModel)]="banda" type="text" name="banda" placeholder="Nombre de banda"></ion-input>
+          <ion-input [(ngModel)]="titulo" type="text" name="titulo" placeholder="Titulo de la cancion"></ion-input>
+          
+          <button ion-button color="primary" block (click)="crear_cancion()">
+            Añadir cancion
+          </button>
+          
+        </ion-list>
+      </form>
+
+</ion-content>

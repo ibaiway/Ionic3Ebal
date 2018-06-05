@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Lenguajes</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Lenguajes de Programacion</h2>
+ 
+      <div ion-item *ngFor="let lenguaje of lenguajes" (click)="enviar(lenguaje)"> <!-- Se hace un "for" al json de lenguajes y cuando se hace click redirige a la pagina Info del objeto correspondiente  -->
+          <div>
+            {{ lenguaje.name }} <!-- Se muestra el nombre del objeto  -->
+          </div>
+          <button (click)="eliminar(lenguaje)" float-right> <!-- Al hacer click en el boton se elimina el objeto correspondiente  -->
+            <ion-icon  name="trash" ></ion-icon>
+          </button>
+         </div>
+
+  <button ion-button color="secondary" block (click)="doPrompt()">Añadir lenguaje </button>  <!-- Al hacer click en el boton se muestra un alert para insertar un nuevo lenguaje  -->
+
+</ion-content>
